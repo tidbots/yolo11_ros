@@ -35,7 +35,7 @@ RUN mkdir -p ${CATKIN_WS}/src
 WORKDIR ${CATKIN_WS}
 
 # entrypoint
-COPY docker/entrypoint.sh /entrypoint.sh
+COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["bash"]
