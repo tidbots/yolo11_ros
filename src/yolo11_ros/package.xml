@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>yolo11_ros</name>
+  <version>0.0.1</version>
+  <description>YOLO11 detector node for ROS1 Noetic</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>rospy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>vision_msgs</depend>
+  <depend>cv_bridge</depend>
+  <depend>image_transport</depend>
+  <depend>geometry_msgs</depend>
+</package>
