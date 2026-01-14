@@ -18,5 +18,5 @@ services:
     devices:
       - /dev/video0:/dev/video0
     volumes:
-      - ./catkin_ws:/catkin_ws
+      - ./src:/catkin_ws/src
     command: bash -lc "cd /catkin_ws && catkin build && roslaunch yolo11_ros yolo11_usb.launch"
