@@ -17,7 +17,7 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | a
  && apt-get update && apt-get install -y \
     ros-noetic-ros-base \
     ros-noetic-cv-bridge ros-noetic-image-transport \
-    ros-noetic-vision-msgs \
+    ros-noetic-vision-msgs ros-noetic-rqt-image-view \
     ros-noetic-tf2-ros ros-noetic-tf2-geometry-msgs \
     ros-noetic-usb-cam \
     python3-catkin-tools \
