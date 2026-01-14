@@ -22,7 +22,7 @@
       type="semantic_filter_node.py"
       name="semantic_filter_bottle"
       output="screen">
-  <param name="allow_classes" value="['person']"/>
+<param name="allow_ids" value="[0]"/>
   <param name="min_score" value="0.4"/>
 </node>
 </launch>
