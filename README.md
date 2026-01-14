@@ -50,7 +50,7 @@ results.plot() による bbox + class + score 描画済み画像
   - score : confidence
   - pose : identity（必須なのでダミーで設定）
  
-### semantic_filter_node.py の役割
+## semantic_filter_node.py 
 入力
 ```
 /yolo11/detections
@@ -73,7 +73,7 @@ bottle	39
 cup	    41
 ```
 
-### launch 設定例
+## launch 設定例
 bottle のみ（把持用）
 ```
 <node pkg="yolo11_ros"
@@ -88,3 +88,30 @@ person のみ（GPSR / HRI）
 ```
 <param name="allow_ids" value="[0]"/>
 ```
+## 使い方
+### インストール
+```
+git clone
+cd yolo11_ros
+docker compose build
+```
+### 実行
+```
+docker compose up
+```
+別のターミナルで
+```
+docker compose exec yolo11_noetic bash
+```
+```
+rqt_image_view
+```
+別のターミナルで
+```
+docker compose exec yolo11_noetic bash
+```
+```
+rostopic echo /
+```
+
+
