@@ -91,7 +91,7 @@ person のみ（GPSR / HRI）
 ## 使い方
 ### インストール
 ```
-git clone
+git clone https://github.com/tidbots/yolo11_ros.git
 cd yolo11_ros
 docker compose build
 ```
