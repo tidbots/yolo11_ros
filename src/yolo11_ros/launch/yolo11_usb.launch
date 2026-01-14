@@ -17,4 +17,12 @@
     <param name="publish_annotated" value="true"/>
   <param name="model" value="yolo11n.pt"/>
   </node>
+
+<node pkg="yolo11_ros"
+      type="semantic_filter_node.py"
+      name="semantic_filter_bottle"
+      output="screen">
+  <param name="allow_classes" value="['person']"/>
+  <param name="min_score" value="0.4"/>
+</node>
 </launch>
