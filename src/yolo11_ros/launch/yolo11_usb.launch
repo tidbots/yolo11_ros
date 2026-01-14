@@ -15,5 +15,6 @@
     <param name="conf" value="0.35"/>
     <param name="iou" value="0.45"/>
     <param name="publish_annotated" value="true"/>
+  <param name="model" value="yolo11n.pt"/>
   </node>
 </launch>
